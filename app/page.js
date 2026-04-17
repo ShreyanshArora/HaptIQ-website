@@ -49,8 +49,7 @@ export default function Home() {
           <li><a href="#features" onClick={() => setMobileOpen(false)}>Features</a></li>
           <li><a href="#gallery" onClick={() => setMobileOpen(false)}>Gallery</a></li>
           <li><a href="#support" onClick={() => setMobileOpen(false)}>Support</a></li>
-          <li><a href="#policies" onClick={() => setMobileOpen(false)}>Policies</a></li>
-          <li><a href="#terms" onClick={() => setMobileOpen(false)}>Terms</a></li>
+
         </ul>
         <div className="nav-cta">
           <button className="btn-waitlist-nav" id="btn-waitlist-nav" onClick={openWaitlist}>
@@ -71,9 +70,6 @@ export default function Home() {
 
       {/* ===== HERO ===== */}
       <section className="hero" id="hero">
-        <div className="hero-bg-glow purple"></div>
-        <div className="hero-bg-glow cyan"></div>
-        <div className="hero-bg-glow pink"></div>
         <div className="hero-grid"></div>
 
         <div className="hero-content">
@@ -83,13 +79,12 @@ export default function Home() {
               Now available on iOS
             </div>
             <h1 className="hero-title">
-              Feel Every <br />
-              <span className="gradient-text">Beat & Touch</span>
+              Trust Your <br />
+              <span className="gradient-text">Sense of Touch</span>
             </h1>
             <p className="hero-description">
-              HaptIQ is the world&apos;s first haptic feedback game that makes you
-              <strong> feel</strong> the gameplay. Every tap, swipe, and hold delivers
-              a unique vibration pattern. Your senses are the controller.
+              Haptic Hunt is a real-time multiplayer social deduction game where you rely on touch instead of sight or sound.
+              Experience haptic sequences, uncover the truth, and bluff your way to victory.
             </p>
             <div className="hero-actions">
               <a
@@ -114,29 +109,15 @@ export default function Home() {
           </div>
 
           <div className="hero-visual">
-            <div className="floating-card card-1">
-              <div className="card-icon purple">🎮</div>
-              <div className="card-info">
-                <span className="card-label">Active Players</span>
-                <span className="card-value">12.4K+</span>
-              </div>
-            </div>
-            <div className="phone-mockup">
+            <div className="hero-portrait">
               <Image
-                src="/gameplay1.png"
-                alt="HaptIQ Gameplay"
-                width={280}
-                height={560}
+                src="/homepage-left.png"
+                alt="HaptIQ Portrait"
+                width={600}
+                height={800}
                 priority
                 style={{ width: "100%", height: "auto" }}
               />
-            </div>
-            <div className="floating-card card-2">
-              <div className="card-icon cyan">⚡</div>
-              <div className="card-info">
-                <span className="card-label">Haptic Modes</span>
-                <span className="card-value">50+ Patterns</span>
-              </div>
             </div>
           </div>
         </div>
@@ -146,59 +127,52 @@ export default function Home() {
       <section className="section" id="features">
         <div className="section-header">
           <span className="section-label">Features</span>
-          <h2 className="section-title">Why HaptIQ Hits Different</h2>
+          <h2 className="section-title">Experience the Hunt</h2>
           <p className="section-subtitle">
-            A game designed from the ground up to use your phone&apos;s haptic engine
-            as a core gameplay mechanic.
+            A real-time multiplayer social deduction game where your sense of touch is your only guide to uncover the truth.
           </p>
         </div>
         <div className="features-grid">
           <div className="feature-card" id="feature-haptics">
             <div className="feature-icon">📳</div>
-            <h3>Advanced Haptics</h3>
+            <h3>Haptic Sequences</h3>
             <p>
-              Custom-designed vibration patterns for every interaction. Feel the
-              difference between objects, surfaces, and impacts.
+              In each round, experience a sequence of haptic vibrations. Pay close attention and guess how many you felt to survive.
             </p>
           </div>
-          <div className="feature-card" id="feature-levels">
-            <div className="feature-icon">🌀</div>
-            <h3>50+ Unique Levels</h3>
+          <div className="feature-card" id="feature-imposter">
+            <div className="feature-icon">🎭</div>
+            <h3>The Imposter&apos;s Bluff</h3>
             <p>
-              Each level introduces new haptic patterns and challenges. Progress
-              through increasingly immersive stages.
+              While crewmates receive accurate feedback, the imposter gets misleading or no feedback, forcing them to bluff their way through.
             </p>
           </div>
-          <div className="feature-card" id="feature-audio">
-            <div className="feature-icon">🎧</div>
-            <h3>Spatial Audio</h3>
+          <div className="feature-card" id="feature-voting">
+            <div className="feature-icon">🗳️</div>
+            <h3>Tense Voting Rounds</h3>
             <p>
-              Synchronized audio-haptic experience. Sound and touch merge to create
-              a truly immersive sensory experience.
+              If the imposter guesses incorrectly, players enter a voting round to identify and eliminate the suspect.
+            </p>
+          </div>
+          <div className="feature-card" id="feature-elimination">
+            <div className="feature-icon">⚡</div>
+            <h3>High Stakes Elimination</h3>
+            <p>
+              If the imposter guesses correctly, voting is skipped. Any crewmates who guessed the haptic sequence wrong are eliminated!
+            </p>
+          </div>
+          <div className="feature-card" id="feature-psychological">
+            <div className="feature-icon">🧠</div>
+            <h3>Psychological Gameplay</h3>
+            <p>
+              Combine deception, tactile interaction, and fast-paced social play for a unique and engaging multiplayer experience.
             </p>
           </div>
           <div className="feature-card" id="feature-multiplayer">
             <div className="feature-icon">👥</div>
-            <h3>Multiplayer Mode</h3>
+            <h3>Real-Time Multiplayer</h3>
             <p>
-              Challenge friends in real-time haptic duels. Feel your opponent&apos;s
-              moves and react instinctively.
-            </p>
-          </div>
-          <div className="feature-card" id="feature-customize">
-            <div className="feature-icon">🎨</div>
-            <h3>Custom Profiles</h3>
-            <p>
-              Tune haptic intensity, patterns, and feedback style to match your
-              preferences and play style.
-            </p>
-          </div>
-          <div className="feature-card" id="feature-leaderboard">
-            <div className="feature-icon">🏆</div>
-            <h3>Global Leaderboards</h3>
-            <p>
-              Compete globally. Climb the ranks and prove your haptic reflexes against
-              players worldwide.
+              Gather your friends and dive into fast-paced, social rounds where no one can be trusted.
             </p>
           </div>
         </div>
@@ -208,43 +182,43 @@ export default function Home() {
       <section className="section gallery" id="gallery">
         <div className="section-header">
           <span className="section-label">Screenshots</span>
-          <h2 className="section-title">See HaptIQ in Action</h2>
+          <h2 className="section-title">See Haptic Hunt in Action</h2>
           <p className="section-subtitle">
-            Stunning visuals paired with next-gen haptic feedback.
+            A unique blend of deception and tactile interaction.
           </p>
         </div>
         <div className="gallery-scroll">
           <div className="gallery-item" id="screenshot-1">
             <Image
-              src="/gameplay1.png"
-              alt="HaptIQ Gameplay - Haptic Waves"
+              src="/room-code-left.png"
+              alt="HaptIQ - Room Code"
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
             <div className="gallery-overlay">
-              <span>Haptic Wave Mode</span>
+              <span>Room Code</span>
             </div>
           </div>
           <div className="gallery-item" id="screenshot-2">
             <Image
-              src="/gameplay2.png"
-              alt="HaptIQ Gameplay - Rhythm Mode"
+              src="/room-lobby-left.png"
+              alt="HaptIQ - Room Lobby"
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
             <div className="gallery-overlay">
-              <span>Rhythm Challenge</span>
+              <span>Room Lobby</span>
             </div>
           </div>
           <div className="gallery-item" id="screenshot-3">
             <Image
-              src="/gameplay3.png"
-              alt="HaptIQ Gameplay - Level Select"
+              src="/result-left.png"
+              alt="HaptIQ - Room Result"
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
             <div className="gallery-overlay">
-              <span>Level Selection</span>
+              <span>Room Result</span>
             </div>
           </div>
         </div>
@@ -255,7 +229,7 @@ export default function Home() {
         <div className="cta-container">
           <h2 className="cta-title">Ready to Feel the Game?</h2>
           <p className="cta-subtitle">
-            Download HaptIQ today and unlock a new dimension of mobile gaming.
+            Download Haptic Hunt today and dive into fast-paced social play.
           </p>
           <div className="cta-actions">
             <a
@@ -286,8 +260,9 @@ export default function Home() {
           <div className="footer-brand">
             <div className="nav-logo">HaptIQ</div>
             <p>
-              The next generation of mobile gaming. Feel every moment with
-              advanced haptic feedback technology.
+              HaptIQ is a revolutionary real-time multiplayer social deduction game where 
+              players rely on touch instead of sight or sound to uncover the truth. 
+              Experience a new dimension of tactile gaming where your senses are the controller.
             </p>
           </div>
           <div className="footer-col" id="support">
@@ -299,24 +274,7 @@ export default function Home() {
               <li><a href="#">Bug Report</a></li>
             </ul>
           </div>
-          <div className="footer-col" id="policies">
-            <h4>Policies</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Data Processing</a></li>
-              <li><a href="#">GDPR</a></li>
-            </ul>
-          </div>
-          <div className="footer-col" id="terms">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">EULA</a></li>
-              <li><a href="#">Refund Policy</a></li>
-              <li><a href="#">Attributions</a></li>
-            </ul>
-          </div>
+
         </div>
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} HaptIQ. All rights reserved.</p>
