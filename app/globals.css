@@ -226,10 +226,10 @@ body {
 }
 
 .hero-content {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 80px;
   align-items: center;
   position: relative;
@@ -394,7 +394,7 @@ body {
 .phone-mockup, .hero-portrait {
   position: relative;
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   z-index: 2;
 }
 
@@ -572,32 +572,27 @@ body {
 .gallery {
   background: var(--bg-secondary);
   overflow: hidden;
+  padding: 60px 0;
 }
 
 .gallery-scroll {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 48px;
-  padding: 0 24px;
+  gap: 40px;
+  padding: 0 40px;
 }
 
 .gallery-item {
-  border-radius: 32px;
-  overflow: hidden;
   position: relative;
-  width: 300px;
-  min-width: 260px;
-  aspect-ratio: 9/19.5;
-  border: none;
+  width: 700px;
+  min-width: 450px;
+  height: 1200px;
   background: transparent;
   transition: var(--transition-smooth);
   cursor: pointer;
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.4),
-    0 0 40px rgba(78, 178, 249, 0.08);
 }
 
 .gallery-item:hover {
@@ -626,7 +621,6 @@ body {
   padding: 28px 20px;
   opacity: 0;
   transition: var(--transition-smooth);
-  border-radius: 32px;
 }
 
 .gallery-item:hover .gallery-overlay {

@@ -193,7 +193,7 @@ export default function Home() {
               src="/room-code-left.png"
               alt="HaptIQ - Room Code"
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
             <div className="gallery-overlay">
               <span>Room Code</span>
@@ -204,7 +204,7 @@ export default function Home() {
               src="/room-lobby-left.png"
               alt="HaptIQ - Room Lobby"
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
             <div className="gallery-overlay">
               <span>Room Lobby</span>
@@ -215,7 +215,7 @@ export default function Home() {
               src="/result-left.png"
               alt="HaptIQ - Room Result"
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
             <div className="gallery-overlay">
               <span>Room Result</span>
