@@ -601,18 +601,15 @@ body {
 }
 
 .gallery-item:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.5),
-    0 0 60px rgba(78, 178, 249, 0.2);
+  transform: translateY(-10px);
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: var(--transition-smooth);
-  border-radius: 32px;
+  border-radius: 0;
 }
 
 .gallery-item:hover img {
