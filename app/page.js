@@ -83,7 +83,7 @@ export default function Home() {
               <span className="gradient-text">Sense of Touch</span>
             </h1>
             <p className="hero-description">
-              Haptic Hunt is a real-time multiplayer social deduction game where you rely on touch instead of sight or sound.
+              HaptIQ is a real-time multiplayer social deduction game where you rely on touch instead of sight or sound.
               Experience haptic sequences, uncover the truth, and bluff your way to victory.
             </p>
             <div className="hero-actions">
@@ -182,7 +182,7 @@ export default function Home() {
       <section className="section gallery" id="gallery">
         <div className="section-header">
           <span className="section-label">Screenshots</span>
-          <h2 className="section-title">See Haptic Hunt in Action</h2>
+          <h2 className="section-title">See HaptIQ in Action</h2>
           <p className="section-subtitle">
             A unique blend of deception and tactile interaction.
           </p>
@@ -229,7 +229,7 @@ export default function Home() {
         <div className="cta-container">
           <h2 className="cta-title">Ready to Feel the Game?</h2>
           <p className="cta-subtitle">
-            Download Haptic Hunt today and dive into fast-paced social play.
+            Download HaptIQ today and dive into fast-paced social play.
           </p>
           <div className="cta-actions">
             <a
