@@ -5,7 +5,7 @@ import Image from "next/image";
 
 // ======== CONFIGURE YOUR LINKS HERE ========
 const APP_STORE_LINK = "#"; // <-- Replace with your App Store link
-const SUPPORT_EMAIL = "support@HaptIQ.app";
+const SUPPORT_EMAIL = "anuj69937@gmail.com";
 // ============================================
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
           <li><a href="#features" onClick={() => setMobileOpen(false)}>Features</a></li>
           <li><a href="#gallery" onClick={() => setMobileOpen(false)}>Gallery</a></li>
           <li><a href="#support" onClick={() => setMobileOpen(false)}>Support</a></li>
-
+          <li><a href="/privacy" onClick={() => setMobileOpen(false)}>Privacy Policy</a></li>
         </ul>
         <div className="nav-cta">
           <button className="btn-waitlist-nav" id="btn-waitlist-nav" onClick={openWaitlist}>
