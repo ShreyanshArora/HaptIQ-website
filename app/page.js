@@ -5,7 +5,7 @@ import Image from "next/image";
 
 // ======== CONFIGURE YOUR LINKS HERE ========
 const APP_STORE_LINK = "https://apps.apple.com/us/app/haptiq-can-you-sense-the-truth/id6762599070"; // <-- Replace with your App Store link
-const SUPPORT_EMAIL = "anuj69937@gmail.com";
+const SUPPORT_EMAIL = "shreyansharora@gmail.com";
 // ============================================
 
 export default function Home() {
